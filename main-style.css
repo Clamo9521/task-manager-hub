@@ -42,6 +42,30 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-bottom: 50px;
+    justify-items: center;
+}
+
+/* For larger screens with 3+ columns, centre the bottom row */
+@media (min-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 350px);
+        justify-content: center;
+    }
+
+    /* Position the last two cards in the centre of the bottom row */
+    .project-card:nth-child(4) {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: end;
+        margin-right: 15px;
+    }
+
+    .project-card:nth-child(5) {
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: start;
+        margin-left: 15px;
+    }
 }
 
 .project-card {
