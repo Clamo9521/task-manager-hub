@@ -46,7 +46,7 @@ body {
 }
 
 /* Inverted triangle layout for larger screens - 3 on top, 2 centred below */
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
     .projects-grid {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -55,6 +55,7 @@ body {
         justify-content: center;
         max-width: 1200px;
         margin: 0 auto 50px auto;
+        padding: 20px;
     }
 
     /* Top row: 3 cards evenly spaced */
@@ -92,7 +93,6 @@ body {
     box-shadow: 0 10px 30px rgba(21, 0, 103, 0.3);
     transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 400px;
@@ -259,7 +259,7 @@ body {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 899px) {
     .container {
         padding: 20px 15px;
     }
