@@ -52,6 +52,9 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
 }
 
 .project-card::before {
@@ -121,6 +124,7 @@ body {
     flex-direction: column;
     gap: 8px;
     margin-bottom: 25px;
+    flex-grow: 1;
 }
 
 .feature {
@@ -142,6 +146,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     min-height: 48px;
+    margin-top: auto;
 }
 
 .work-btn {
