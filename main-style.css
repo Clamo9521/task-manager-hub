@@ -249,21 +249,23 @@ body {
 
 .return-btn {
     display: inline-block;
-    padding: 12px 30px;
-    background: linear-gradient(135deg, #EDE8ED 0%, #ffffff 100%);
+    padding: 15px 35px;
+    background: white;
     color: #150067;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
+    font-size: 1.1em;
     margin-bottom: 20px;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(237, 232, 237, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: none;
 }
 
 .return-btn:hover {
-    background: linear-gradient(135deg, #ffffff 0%, #EDE8ED 100%);
+    background: #f8f8f8;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(237, 232, 237, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .main-footer p {
